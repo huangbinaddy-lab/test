@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "largest-files"
+version = "0.1.0"
+description = "List the largest files in a directory tree"
+requires-python = ">=3.10"
+
+[project.scripts]
+largest-files = "largest_files:main"
+
+[tool.setuptools]
+py-modules = ["largest_files"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
